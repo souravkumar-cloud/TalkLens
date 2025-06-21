@@ -1,4 +1,4 @@
-# 🗣️ TalkLens
+# 👁️‍🗨️ TalkLens
 
 **TalkLens** is a full-stack language exchange and communication platform featuring real-time chat, video calls, screen sharing, JWT authentication, and beautiful UI with 32 dynamic themes.
 
@@ -19,7 +19,4 @@
 - 🎯 Scalable Architecture with Stream Integration  
 - ⏳ Built for performance, extensibility, and real-time features  
 
----
-
-## 📁 Project Structure
 
