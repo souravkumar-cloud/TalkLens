@@ -36,10 +36,11 @@ const userSchema = new mongoose.Schema({
         type:String,
         default:"",
     },
-    isOnboraded:{
-        type:Boolean,
-        default:false,
+    isOnboarded: {
+        type: Boolean,
+        default: false,
     },
+
     friends:[{
         type:mongoose.Schema.Types.ObjectId,
         ref:"User",
@@ -47,6 +48,7 @@ const userSchema = new mongoose.Schema({
 
 
 },{timestamps:true});
+
 userSchema.pre('save', async function(next) {
     if (!this.isModified('password')) return next();
     try{
@@ -60,7 +62,7 @@ userSchema.pre('save', async function(next) {
     }
 });
 
-userSchema.methods.comparePassword = async function(candidatePassword) {
+userSchema.methods.matchPassword = async function(candidatePassword) {
     try{
         return await bcrypt.compare(candidatePassword, this.password);
     }

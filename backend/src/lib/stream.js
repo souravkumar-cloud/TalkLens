@@ -12,11 +12,10 @@ const streamClient = StreamChat.getInstance(apiKey, apiSecret);
 
 export const upsertStreamUser = async (userData) => {
     try {
-       await streamClient.upsertUser(userData);
+       await streamClient.upsertUser([userData]);
        return userData;
     } catch (error) {
         console.error(`Error upserting Stream user: ${error.message}`);
-        throw error;
     }
 };
 

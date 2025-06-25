@@ -1,7 +1,6 @@
 import express from 'express';
-import { login, logout, signup } from '../controller/auth.controller.js'; // Importing the auth controller functions
+import { login, logout, signup, onboard } from '../controller/auth.controller.js'; // Importing the auth controller functions
 import { protectRoute } from '../middleware/auth.middleware.js'; // Importing the protectRoute middleware
-import { onboard } from '../controller/auth.controller.js'; // Importing the onboard function
 const router = express.Router();
 
 router.post('/login',login);
