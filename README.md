@@ -6,7 +6,7 @@
 
 ---
 
-## 🌟 Highlights
+## 🌟 Highlight
 
 - 🌐 Real-time Messaging with Typing Indicators & Emoji Reactions  
 - 📹 1-on-1 & Group Video Calls with Screen Sharing & Recording  
